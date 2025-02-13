@@ -1,0 +1,326 @@
+.valentine-gallery {
+  text-align: center;
+  padding: 20px;
+  height: 500px;
+}
+
+/* 💖 Heart Shape Layout */
+.heart-gallery {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 💖 Positioning images in heart shape */
+.gallery-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+/* Center Image */
+.heart-center {
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+  position: absolute;
+  z-index: 5;
+}
+
+/* 💖 Arrange images in a heart shape */
+.heart-photo-1 {
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+.heart-photo-2 {
+  top: 70px;
+  left: 20px;
+}
+.heart-photo-3 {
+  top: 70px;
+  right: 20px;
+}
+.heart-photo-4 {
+  top: 120px;
+  left: -10px;
+}
+.heart-photo-5 {
+  top: 120px;
+  right: -10px;
+}
+.heart-photo-6 {
+  top: 170px;
+  left: 0;
+}
+.heart-photo-7 {
+  top: 170px;
+  right: 0;
+}
+.heart-photo-8 {
+  top: 220px;
+  left: 30px;
+}
+.heart-photo-9 {
+  top: 220px;
+  right: 30px;
+}
+.heart-photo-10 {
+  top: 58px;
+  left: 95px;
+}
+.heart-photo-11 {
+  top: 58px;
+  right: 95px;
+}
+.heart-photo-12 {
+  bottom: 60px;
+  left: 70px;
+}
+.heart-photo-13 {
+  bottom: 60px;
+  right: 70px;
+}
+.heart-photo-14 {
+  bottom: 30px;
+  left: 90px;
+}
+.heart-photo-15 {
+  bottom: 30px;
+  right: 90px;
+}
+.heart-photo-16 {
+  bottom: 10px;
+  left: 110px;
+}
+.heart-photo-17 {
+  bottom: 10px;
+  right: 110px;
+}
+.heart-photo-18 {
+  bottom: -20px;
+  left: 130px;
+}
+.heart-photo-19 {
+  bottom: -20px;
+  right: 130px;
+}
+.heart-photo-20 {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+
+/* 💖 Responsive Adjustments */
+@media (max-width: 768px) {
+  .heart-gallery {
+    width: 300px;
+    height: 300px;
+  }
+
+  .gallery-photo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .heart-center {
+    width: 60px;
+    height: 60px;
+  }
+
+  .heart-photo-1 {
+    top: 30px;
+  }
+  .heart-photo-2 {
+    top: 50px;
+    left: 15px;
+  }
+  .heart-photo-3 {
+    top: 50px;
+    right: 15px;
+  }
+  .heart-photo-4 {
+    top: 90px;
+    left: -5px;
+  }
+  .heart-photo-5 {
+    top: 90px;
+    right: -5px;
+  }
+  .heart-photo-6 {
+    top: 130px;
+    left: 0;
+  }
+  .heart-photo-7 {
+    top: 130px;
+    right: 0;
+  }
+  .heart-photo-8 {
+    top: 170px;
+    left: 20px;
+  }
+  .heart-photo-9 {
+    top: 170px;
+    right: 20px;
+  }
+  .heart-photo-10 {
+    top: 45px;
+    left: 70px;
+  }
+  .heart-photo-11 {
+    top: 45px;
+    right: 70px;
+  }
+  .heart-photo-12 {
+    bottom: 40px;
+    left: 50px;
+  }
+  .heart-photo-13 {
+    bottom: 40px;
+    right: 50px;
+  }
+  .heart-photo-18 {
+    bottom: -15px;
+    left: 90px;
+  }
+  .heart-photo-19 {
+    bottom: -15px;
+    right: 90px;
+  }
+  .heart-photo-20 {
+    bottom: -30px;
+  }
+
+  .heart-photo-14,
+  .heart-photo-15,
+  .heart-photo-16,
+  .heart-photo-17 {
+    display: none;
+  }
+
+  .valentine-gallery {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heart-gallery {
+    width: 250px;
+    height: 250px;
+  }
+
+  .gallery-photo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .heart-center {
+    width: 50px;
+    height: 50px;
+  }
+
+  .heart-photo-1 {
+    top: 25px;
+  }
+  .heart-photo-2 {
+    top: 40px;
+    left: 10px;
+  }
+  .heart-photo-3 {
+    top: 40px;
+    right: 10px;
+  }
+  .heart-photo-4 {
+    top: 70px;
+    left: -5px;
+  }
+  .heart-photo-5 {
+    top: 70px;
+    right: -5px;
+  }
+  .heart-photo-6 {
+    top: 110px;
+    left: 0;
+  }
+  .heart-photo-7 {
+    top: 110px;
+    right: 0;
+  }
+  .heart-photo-8 {
+    top: 140px;
+    left: 15px;
+  }
+  .heart-photo-9 {
+    top: 140px;
+    right: 15px;
+  }
+  .heart-photo-10 {
+    top: 35px;
+    left: 55px;
+  }
+  .heart-photo-11 {
+    top: 35px;
+    right: 55px;
+  }
+  .heart-photo-12 {
+    bottom: 30px;
+    left: 40px;
+  }
+  .heart-photo-13 {
+    bottom: 30px;
+    right: 40px;
+  }
+  .heart-photo-18 {
+    bottom: -10px;
+    left: 70px;
+  }
+  .heart-photo-19 {
+    bottom: -10px;
+    right: 70px;
+  }
+  .heart-photo-20 {
+    bottom: -25px;
+  }
+
+  .heart-photo-14,
+  .heart-photo-15,
+  .heart-photo-16,
+  .heart-photo-17 {
+    display: none;
+  }
+  .valentine-gallery {
+    height: 350px;
+  }
+}
+
+/* Zoomed-in Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.zoomed-image {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.5);
+}

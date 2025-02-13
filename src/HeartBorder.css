@@ -1,0 +1,43 @@
+/* Heart Frame - Stays Fixed but Supports Scroll */
+.heartBoarder-frame {
+    position: fixed; /* Keeps it in place even on scroll */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Prevents interference with clicks */
+    z-index: 99999; /* Ensures hearts stay on top */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Heart Styling */
+  .heartBoarder {
+    position: absolute;
+    display: inline-block;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+  }
+  
+  /* Random Rotation & Size */
+  .heartBoarder {
+    transform: rotate(var(--angle)) scale(var(--scale));
+  }
+  
+  /* Heartbeat Animation */
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .heartBoarder {
+    animation: heartbeat 1.5s infinite ease-in-out;
+  }
+  

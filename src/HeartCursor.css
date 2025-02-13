@@ -1,0 +1,10 @@
+.heart-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  pointer-events: none;
+  user-select: none;
+}

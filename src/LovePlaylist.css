@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap");
+.love-playlist {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 193, 0.3),
+    rgba(255, 105, 180, 0.2)
+  );
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  max-width: 650px;
+  margin: 30px auto;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.love-playlist:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.playlist-container {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background: #fff; */
+}
+
+iframe {
+  border-radius: 12px;
+}
+
+/* Play/Pause Button */
+.play-music-button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(255, 105, 180, 0.3);
+}
+
+.play-music-button:hover {
+  background: #ff1493;
+  box-shadow: 0 5px 12px rgba(255, 20, 147, 0.4);
+}
+
+/* Toggle Button */
+.toggle-platform-button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgba(255, 64, 129, 0.3);
+  justify-self: center;
+}
+
+.toggle-platform-button:hover {
+  background: #e91e63;
+  box-shadow: 0 5px 12px rgba(233, 30, 99, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .love-playlist {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .play-music-button,
+  .toggle-platform-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.prev-next-button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(255, 64, 129, 0.3);
+}
+
+.prev-next-button:hover {
+  background: #e91e63;
+  box-shadow: 0 5px 12px rgba(233, 30, 99, 0.4);
+}
+
+#youtube-player iframe {
+  pointer-events: none; /* Prevent user interaction */
+}
+
+#youtube-player {
+  position: relative;
+  width: 100%;
+  height: 315px;
+  overflow: hidden;
+}
+
+#youtube-player::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Hide YouTube overlay elements */
+html iframe#youtube-player {
+  pointer-events: none !important;
+}
+
+iframe[src*="youtube.com"] {
+  pointer-events: none !important;
+}
+
+#youtube-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  z-index: 10;
+}
+
+/* Default: Show both icons and text */
+.icon {
+  display: inline;
+}
+
+.text {
+  display: inline;
+}
+
+/* Mobile Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+  .text {
+    display: none; /* Hide text on mobile */
+  }
+}
